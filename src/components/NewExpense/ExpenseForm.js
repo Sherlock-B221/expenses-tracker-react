@@ -17,7 +17,7 @@ const ExpenseForm = (props) => {
         // console.log(event.target.value)
         const date = new Date(event.target.value).toString();
         // console.log(date)
-        setEnteredDate(date)
+        setEnteredDate(event.target.value)
     }
 
     // const [enteredDetails, setEnteredDetails] = useState({
