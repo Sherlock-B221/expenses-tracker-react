@@ -1,7 +1,7 @@
 import {ExpenseDate} from "./ExpenseDate";
 import './ExpenseItem.css';
 import {Card} from "../UI/Card";
-import React, { useState } from "react";
+import React from "react";
 
 export const ExpenseItem = (props) => {
     return <Card className='expense-item'>
