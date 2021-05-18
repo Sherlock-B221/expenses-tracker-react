@@ -19,10 +19,12 @@ const ExpensesChart = (props) => {
     ];
 
     for (const expense of props.expenses) {
-        const expenseMonth = expense.date.getMonth(); // starting at 0 => January => 0
+        console.log(props.expenses,'herjkha');
+        const date = new Date(expense.date)
+        const expenseMonth = date.getMonth(); // starting at 0 => January => 0
         chartDataPoints[expenseMonth].value += expense.amount;
     }
-
+//Todo: Check out what the problem is with the date for everywhere...
     return <Chart dataPoints={chartDataPoints} />;
 };
 
